@@ -1,0 +1,38 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@font-face {
+    font-family: 'Soyuz Grotesk';
+    src: url("../fonts/SoyuzGrotesk/SoyuzGroteskBold.ttf")  format("truetype"),
+         url("../fonts/SoyuzGrotesk/Soyuz_Grotesk_Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Alistair Signature';
+    src: url("../fonts/AlistairSignature/AlistairSignature.ttf")  format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+$font-manrope: "Manrope", sans-serif;
+$font-soyuz-grotesk: "Soyuz Grotesk", serif;
+$font-alistair-signature: "Alistair Signature", serif;
+// Fonts end
+
+// Colors
+// Colors end
+
+@mixin media($value) {
+    @if ($value < 0) {
+        @media screen and (min-width: calc($value * (-1)) + 'px') {
+            @content;
+        }
+
+    } @else {
+        @media screen and (max-width: $value + 'px') {
+            @content;
+        }
+    }
+}
