@@ -31,3 +31,34 @@ if (menu) {
         bodyVisible();
     }
 }
+
+const footerSwp = new Swiper('.footer .swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 13,
+    loop: true,
+    pagination: {
+        el: '.footer .swp-pagination',
+        type: "progressbar",
+    },
+    navigation: {
+        nextEl: '.footer .swp-btn__next',
+        prevEl: '.footer .swp-btn__prev',
+    },
+    breakpoints: {
+        992: {
+            slidesPerView: 1,
+            spaceBetween: 35
+        }
+    }
+})
+
+if (footerSwp) {
+    let swpLength = footerSwp.slides.length;
+    document.querySelector('.footer .custom-fraction').textContent = '';
+    document.querySelector('.footer .custom-fraction').innerHTML = `${footerSwp.realIndex + 1} <span>/${swpLength}</span>`;
+    
+    footerSwp.on('slideChange', function (e) {
+        document.querySelector('.footer .custom-fraction').textContent = '';
+        document.querySelector('.footer .custom-fraction').innerHTML = `${footerSwp.realIndex + 1} <span>/${swpLength}</span>`;
+    });
+}
