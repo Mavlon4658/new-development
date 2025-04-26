@@ -1,0 +1,265 @@
+// tarif
+.tarif {
+  &_title {
+    position: relative;
+    padding: 138px 0 48px 0;
+
+    @include media(993) {
+      padding: 77px 0 35px 0;
+    }
+
+    h3 {
+      font-family: $font-soyuz-grotesk;
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 94%;
+      text-align: center;
+      color: #1B1B1B;
+      max-width: 675px;
+      margin: 0 auto;
+
+      @include media(768) {
+        font-size: 38px;
+        line-height: 94%;
+        max-width: 100%;
+        text-align: left;
+      }
+    }
+
+    &_icon {
+      position: absolute;
+      top: 140px;
+      bottom: 0;
+      right: 215px;
+      margin: auto;
+      z-index: -1;
+
+      @include media(1200) {
+        display: none;
+      }
+    }
+  }
+
+  &_cards {
+    gap: 53px;
+    position: relative;
+
+    @include media(993) {
+      gap: 40px;
+    }
+
+    .one_icon {
+      position: absolute;
+      left: -10px;
+      top: 223px;
+      z-index: -1;
+
+      @include media(1200) {
+        display: none;
+      }
+    }
+
+    .two_icon {
+      position: absolute;
+      right: 0;
+      bottom: 149px;
+      z-index: -1;
+
+      @include media(1200) {
+        display: none;
+      }
+    }
+  }
+
+  &_card {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+
+    @include media(1200) {
+      width: 100%;
+    }
+
+    @include media(993) {
+      flex-direction: column;
+    }
+
+    &_left {
+      padding: 80px 41px;
+      border-radius: 48px;
+      background: #F7F8F9;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      position: relative;
+      width: 498px;
+
+      @include media(1200) {
+        width: 50%;
+      }
+
+      @include media(993) {
+        padding: 45px 31px;
+        border-radius: 27px;
+        width: 100%;
+        gap: 15px;
+      }
+
+      .title {
+        position: absolute;
+        top: -20px;
+        left: 41px;
+        padding: 16px 26px;
+        font-family: $font-soyuz-grotesk;
+        font-weight: 700;
+        font-size: 27.98px;
+        line-height: 87%;
+        color: #FFFFFF;
+        border-radius: 28px;
+        transform: rotate(-8.22deg);
+        width: max-content;
+
+        @include media(993) {
+          padding: 10px 20px;
+          font-size: 17px;
+          line-height: 87%;
+          left: 31px;
+          top: -10px;
+        }
+
+        &.orange_bg {
+          background: #FE9F46;
+        }
+
+        &.green_bg {
+          background: #0F833B;
+        }
+      }
+
+      h6 {
+        font-family: $font-manrope;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 139%;
+        color: #1B1B1B;
+
+        @include media(993) {
+          font-size: 25px;
+          line-height: 139%;
+        }
+      }
+
+      ul {
+        padding-left: 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        @include media(993) {
+          gap: 15px;
+        }
+
+        li {
+          font-family: $font-manrope;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 139%;
+          color: #1B1B1B;
+          position: relative;
+          max-width: 268px;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: -18px;
+            top: 9px;
+            background: #C4C5C5;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .list_two {
+        li {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &_right {
+      position: relative;
+      width: 643px;
+
+      @include media(1200) {
+        width: 50%;
+      }
+
+      @include media(993) {
+        min-height: 271px;
+        width: 100%;
+      }
+
+      .tarif_img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 48px;
+
+        @include media(1200) {
+          object-fit: cover;
+        }
+
+        @include media(993) {
+          border-radius: 27px;
+        }
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        position: absolute;
+        z-index: 2;
+        left: 33px;
+        top: 29px;
+
+        @include media(993) {
+          top: 16px;
+          left: 19px;
+          gap: 5px;
+        }
+
+        li {
+          padding: 4px 13px;
+          border-radius: 24px;
+          background: #FBFFED;
+          width: max-content;
+          display: flex;
+          align-items: center;
+          gap: 7px;
+
+          @include media(993) {
+            padding: 2px 11px;
+          }
+
+          span {
+            font-family: $font-manrope;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 139%;
+            color: #E38A36;
+
+            @include media(993) {
+              font-size: 12px;
+              line-height: 139%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// tarif

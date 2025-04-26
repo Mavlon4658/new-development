@@ -1,5 +1,8 @@
 @import './normalize',
-        './global';
+        './global',
+        './kindergarten',
+        'tarif',
+        'highlights';
 
 body {
     background: white;
@@ -320,7 +323,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 }
             }
         }
-        
+
         .line {
             width: 2px;
             height: 64px;
@@ -762,3 +765,4 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 // Footer
 .footer {}
 // Footer end
+

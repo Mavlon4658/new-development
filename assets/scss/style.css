@@ -80,6 +80,466 @@ input[type=number]::-webkit-outer-spin-button {
   font-style: normal;
   font-weight: 400;
 }
+.kindergarten {
+  position: relative;
+  padding-top: 163px;
+}
+@media screen and (max-width: 768px) {
+  .kindergarten {
+    padding-top: 81px;
+  }
+}
+.kindergarten .blue_icon {
+  position: absolute;
+  left: 0;
+  top: 47px;
+}
+@media screen and (max-width: 1200px) {
+  .kindergarten .blue_icon {
+    display: none;
+  }
+}
+.kindergarten_title {
+  margin-bottom: 80px;
+  position: relative;
+}
+@media screen and (max-width: 1300px) {
+  .kindergarten_title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .kindergarten_title {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .kindergarten_title {
+    margin-bottom: 0px;
+  }
+}
+.kindergarten_title .stars_icon {
+  position: absolute;
+  top: -56px;
+  right: 154px;
+  z-index: -1;
+}
+@media screen and (max-width: 1300px) {
+  .kindergarten_title .stars_icon {
+    right: 10px;
+    width: 99px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .kindergarten_title .stars_icon {
+    top: -51px;
+    right: 26px;
+    transform: rotate(23deg);
+  }
+}
+.kindergarten_title h3 {
+  font-family: "Soyuz Grotesk", serif;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 94%;
+  text-align: center;
+  color: #1B1B1B;
+  max-width: 884px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .kindergarten_title h3 {
+    font-size: 38px;
+    line-height: 94%;
+    max-width: 100%;
+    text-align: left;
+  }
+}
+.kindergarten_cards {
+  --bs-gutter-x: 142px;
+  --bs-gutter-y: 24px;
+}
+@media screen and (max-width: 1500px) {
+  .kindergarten_cards {
+    --bs-gutter-x: 70px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .kindergarten_cards {
+    --bs-gutter-x: 30px;
+  }
+}
+@media screen and (max-width: 993px) {
+  .kindergarten_cards {
+    --bs-gutter-x: 30px;
+    --bs-gutter-y: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .kindergarten_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    --bs-gutter-x: 12px;
+  }
+  .kindergarten_cards::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .kindergarten .col-md-6 {
+    max-width: 295px;
+  }
+}
+.kindergarten_card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  padding-top: 200px;
+}
+@media screen and (max-width: 768px) {
+  .kindergarten_card {
+    gap: 10px;
+    max-width: 295px;
+  }
+}
+.kindergarten_card img {
+  position: absolute;
+  top: 200px;
+  transform: translateY(-100%);
+  left: 0;
+  width: 100%;
+}
+.kindergarten_card h6 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 139%;
+  color: #1B1B1B;
+}
+@media screen and (max-width: 768px) {
+  .kindergarten_card h6 {
+    font-size: 20px;
+  }
+}
+.kindergarten_card p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 139%;
+  color: #1B1B1B;
+}
+
+.tarif_title {
+  position: relative;
+  padding: 138px 0 48px 0;
+}
+@media screen and (max-width: 993px) {
+  .tarif_title {
+    padding: 77px 0 35px 0;
+  }
+}
+.tarif_title h3 {
+  font-family: "Soyuz Grotesk", serif;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 94%;
+  text-align: center;
+  color: #1B1B1B;
+  max-width: 675px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .tarif_title h3 {
+    font-size: 38px;
+    line-height: 94%;
+    max-width: 100%;
+    text-align: left;
+  }
+}
+.tarif_title_icon {
+  position: absolute;
+  top: 140px;
+  bottom: 0;
+  right: 215px;
+  margin: auto;
+  z-index: -1;
+}
+@media screen and (max-width: 1200px) {
+  .tarif_title_icon {
+    display: none;
+  }
+}
+.tarif_cards {
+  gap: 53px;
+  position: relative;
+}
+@media screen and (max-width: 993px) {
+  .tarif_cards {
+    gap: 40px;
+  }
+}
+.tarif_cards .one_icon {
+  position: absolute;
+  left: -10px;
+  top: 223px;
+  z-index: -1;
+}
+@media screen and (max-width: 1200px) {
+  .tarif_cards .one_icon {
+    display: none;
+  }
+}
+.tarif_cards .two_icon {
+  position: absolute;
+  right: 0;
+  bottom: 149px;
+  z-index: -1;
+}
+@media screen and (max-width: 1200px) {
+  .tarif_cards .two_icon {
+    display: none;
+  }
+}
+.tarif_card {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+}
+@media screen and (max-width: 1200px) {
+  .tarif_card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 993px) {
+  .tarif_card {
+    flex-direction: column;
+  }
+}
+.tarif_card_left {
+  padding: 80px 41px;
+  border-radius: 48px;
+  background: #F7F8F9;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 498px;
+}
+@media screen and (max-width: 1200px) {
+  .tarif_card_left {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 993px) {
+  .tarif_card_left {
+    padding: 45px 31px;
+    border-radius: 27px;
+    width: 100%;
+    gap: 15px;
+  }
+}
+.tarif_card_left .title {
+  position: absolute;
+  top: -20px;
+  left: 41px;
+  padding: 16px 26px;
+  font-family: "Soyuz Grotesk", serif;
+  font-weight: 700;
+  font-size: 27.98px;
+  line-height: 87%;
+  color: #FFFFFF;
+  border-radius: 28px;
+  transform: rotate(-8.22deg);
+  width: -moz-max-content;
+  width: max-content;
+}
+@media screen and (max-width: 993px) {
+  .tarif_card_left .title {
+    padding: 10px 20px;
+    font-size: 17px;
+    line-height: 87%;
+    left: 31px;
+    top: -10px;
+  }
+}
+.tarif_card_left .title.orange_bg {
+  background: #FE9F46;
+}
+.tarif_card_left .title.green_bg {
+  background: #0F833B;
+}
+.tarif_card_left h6 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 139%;
+  color: #1B1B1B;
+}
+@media screen and (max-width: 993px) {
+  .tarif_card_left h6 {
+    font-size: 25px;
+    line-height: 139%;
+  }
+}
+.tarif_card_left ul {
+  padding-left: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (max-width: 993px) {
+  .tarif_card_left ul {
+    gap: 15px;
+  }
+}
+.tarif_card_left ul li {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 139%;
+  color: #1B1B1B;
+  position: relative;
+  max-width: 268px;
+}
+.tarif_card_left ul li::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 9px;
+  background: #C4C5C5;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.tarif_card_left .list_two li {
+  max-width: 100%;
+}
+.tarif_card_right {
+  position: relative;
+  width: 643px;
+}
+@media screen and (max-width: 1200px) {
+  .tarif_card_right {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 993px) {
+  .tarif_card_right {
+    min-height: 271px;
+    width: 100%;
+  }
+}
+.tarif_card_right .tarif_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 48px;
+}
+@media screen and (max-width: 1200px) {
+  .tarif_card_right .tarif_img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 993px) {
+  .tarif_card_right .tarif_img {
+    border-radius: 27px;
+  }
+}
+.tarif_card_right ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  position: absolute;
+  z-index: 2;
+  left: 33px;
+  top: 29px;
+}
+@media screen and (max-width: 993px) {
+  .tarif_card_right ul {
+    top: 16px;
+    left: 19px;
+    gap: 5px;
+  }
+}
+.tarif_card_right ul li {
+  padding: 4px 13px;
+  border-radius: 24px;
+  background: #FBFFED;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+@media screen and (max-width: 993px) {
+  .tarif_card_right ul li {
+    padding: 2px 11px;
+  }
+}
+.tarif_card_right ul li span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 139%;
+  color: #E38A36;
+}
+@media screen and (max-width: 993px) {
+  .tarif_card_right ul li span {
+    font-size: 12px;
+    line-height: 139%;
+  }
+}
+
+.highlights {
+  background: #F7F8F9;
+}
+.highlights_title {
+  padding: 103px 0 58px 0;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+}
+.highlights_btns {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 993px) {
+  .highlights_btns {
+    display: none;
+  }
+}
+.highlights_btns button {
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid #B7B7B7;
+}
+.highlights h3 {
+  font-family: "Soyuz Grotesk", serif;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 94%;
+  color: #1B1B1B;
+  max-width: 531px;
+}
+@media screen and (max-width: 768px) {
+  .highlights h3 {
+    font-size: 38px;
+    line-height: 94%;
+    max-width: 100%;
+  }
+}
+
 body {
   background: white;
   color: #1B1B1B;
