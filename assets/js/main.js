@@ -31,3 +31,27 @@ if (menu) {
         bodyVisible();
     }
 }
+
+
+var swiper = new Swiper(".highlightsSwiper", {
+    slidesPerView: 1.3,
+    spaceBetween: 15,
+    navigation: {
+        nextEl: ".highlights-button-next",
+        prevEl: ".highlights-button-prev",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        768: {
+            slidesPerView: 2.4,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+        },
+    },
+});

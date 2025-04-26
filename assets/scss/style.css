@@ -82,12 +82,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .kindergarten {
   position: relative;
-  padding-top: 163px;
-}
-@media screen and (max-width: 768px) {
-  .kindergarten {
-    padding-top: 81px;
-  }
+  padding-top: 82px;
+  background: #F7F8F9;
 }
 .kindergarten .blue_icon {
   position: absolute;
@@ -497,6 +493,23 @@ input[type=number]::-webkit-outer-spin-button {
 
 .highlights {
   background: #F7F8F9;
+  position: relative;
+  padding-bottom: 82px;
+}
+@media screen and (max-width: 993px) {
+  .highlights {
+    padding-bottom: 0;
+  }
+}
+.highlights_icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+@media screen and (max-width: 993px) {
+  .highlights_icon {
+    display: none;
+  }
 }
 .highlights_title {
   padding: 103px 0 58px 0;
@@ -505,14 +518,37 @@ input[type=number]::-webkit-outer-spin-button {
   justify-content: space-between;
   gap: 20px;
 }
+@media screen and (max-width: 993px) {
+  .highlights_title {
+    padding: 60px 0 20px 0;
+  }
+}
+.highlights_title_right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+@media screen and (max-width: 993px) {
+  .highlights_title_right {
+    display: none;
+  }
+}
+.highlights .number {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 33.98px;
+  line-height: 139%;
+  color: #1B1B1B;
+}
+.highlights .number span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 66.17px;
+  line-height: 139%;
+}
 .highlights_btns {
   display: flex;
   align-items: center;
-}
-@media screen and (max-width: 993px) {
-  .highlights_btns {
-    display: none;
-  }
 }
 .highlights_btns button {
   width: 81px;
@@ -538,6 +574,26 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 94%;
     max-width: 100%;
   }
+}
+.highlights .highlightsSwiper {
+  overflow: hidden;
+}
+@media screen and (max-width: 1024px) {
+  .highlights .highlightsSwiper {
+    overflow: visible;
+  }
+}
+.highlights .highlightsSwiper a {
+  border-radius: 49px;
+  overflow: hidden;
+}
+@media screen and (max-width: 993px) {
+  .highlights .highlightsSwiper a {
+    border-radius: 27px;
+  }
+}
+.highlights .swiper-notification {
+  display: none;
 }
 
 body {

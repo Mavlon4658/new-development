@@ -1,11 +1,8 @@
 // kindergarten
 .kindergarten {
   position: relative;
-  padding-top: 163px;
-
-  @include media(768) {
-    padding-top: 81px;
-  }
+  padding-top: 82px;
+  background: #F7F8F9;
 
   .blue_icon {
     position: absolute;
