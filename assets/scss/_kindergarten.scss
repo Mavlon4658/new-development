@@ -1,0 +1,150 @@
+// kindergarten
+.kindergarten {
+  position: relative;
+  padding-top: 163px;
+
+  @include media(768) {
+    padding-top: 81px;
+  }
+
+  .blue_icon {
+    position: absolute;
+    left: 0;
+    top: 47px;
+
+    @include media(1200) {
+      display: none;
+    }
+  }
+
+  &_title {
+    margin-bottom: 80px;
+    position: relative;
+
+    @include media(1300) {
+      margin-bottom: 50px;
+    }
+
+    @include media(1200) {
+      margin-bottom: 60px;
+    }
+
+    @include media(768) {
+      margin-bottom: 0px;
+    }
+
+    .stars_icon {
+      position: absolute;
+      top: -56px;
+      right: 154px;
+      z-index: -1;
+
+      @include media(1300) {
+        right: 10px;
+        width: 99px;
+      }
+
+      @include media(768) {
+        top: -51px;
+        right: 26px;
+        transform: rotate(23deg);
+      }
+    }
+
+    h3 {
+      font-family: $font-soyuz-grotesk;
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 94%;
+      text-align: center;
+      color: #1B1B1B;
+      max-width: 884px;
+      margin: 0 auto;
+
+      @include media(768) {
+        font-size: 38px;
+        line-height: 94%;
+        max-width: 100%;
+        text-align: left;
+      }
+    }
+  }
+
+  &_cards {
+    --bs-gutter-x: 142px;
+    --bs-gutter-y: 24px;
+
+    @include media(1500) {
+      --bs-gutter-x: 70px;
+    }
+
+    @include media(1300) {
+      --bs-gutter-x: 30px;
+    }
+
+    @include media(993) {
+      --bs-gutter-x: 30px;
+      --bs-gutter-y: 70px;
+    }
+
+    @include media(768) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      --bs-gutter-x: 12px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  .col-md-6 {
+    @include media(768) {
+      max-width: 295px;
+    }
+  }
+
+  &_card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    padding-top: 200px;
+
+    @include media(768) {
+      gap: 10px;
+      max-width: 295px;
+    }
+
+    img {
+      position: absolute;
+      top: 200px;
+      transform: translateY(-100%);
+      left: 0;
+      width: 100%;
+    }
+
+    h6 {
+      font-family: $font-manrope;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 139%;
+      color: #1B1B1B;
+
+      @include media(768) {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-family: $font-manrope;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 139%;
+      color: #1B1B1B;
+    }
+  }
+}
+// kindergarten
