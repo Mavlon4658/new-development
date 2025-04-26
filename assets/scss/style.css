@@ -495,6 +495,51 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
+.highlights {
+  background: #F7F8F9;
+}
+.highlights_title {
+  padding: 103px 0 58px 0;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+}
+.highlights_btns {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 993px) {
+  .highlights_btns {
+    display: none;
+  }
+}
+.highlights_btns button {
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid #B7B7B7;
+}
+.highlights h3 {
+  font-family: "Soyuz Grotesk", serif;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 94%;
+  color: #1B1B1B;
+  max-width: 531px;
+}
+@media screen and (max-width: 768px) {
+  .highlights h3 {
+    font-size: 38px;
+    line-height: 94%;
+    max-width: 100%;
+  }
+}
+
 body {
   background: white;
   color: #1B1B1B;
