@@ -36,6 +36,7 @@ if (menu) {
 var swiper = new Swiper(".highlightsSwiper", {
     slidesPerView: 1.3,
     spaceBetween: 15,
+    loop: true,
     navigation: {
         nextEl: ".highlights-button-next",
         prevEl: ".highlights-button-prev",
@@ -55,6 +56,17 @@ var swiper = new Swiper(".highlightsSwiper", {
         },
     },
 });
+
+if (swiper) {
+    let swpLength = swiper.slides.length;
+    document.querySelector('.highlights_title_right .number').textContent = '';
+    document.querySelector('.highlights_title_right .number').innerHTML = `<span>${swiper.realIndex + 1}</span> /${swpLength}`;
+    
+    swiper.on('slideChange', function (e) {
+        document.querySelector('.highlights_title_right .number').textContent = '';
+        document.querySelector('.highlights_title_right .number').innerHTML = `<span>${swiper.realIndex + 1}</span> /${swpLength}`;
+    });
+}
 
 const footerSwp = new Swiper('.footer .swiper', {
     slidesPerView: 'auto',

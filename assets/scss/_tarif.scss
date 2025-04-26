@@ -1,5 +1,11 @@
 // tarif
 .tarif {
+  padding-bottom: 106px;
+
+  @include media(992) {
+    padding-bottom: 100px;
+  }
+
   &_title {
     position: relative;
     padding: 138px 0 48px 0;
